@@ -3,6 +3,7 @@ package com.arya.mongo.auditing;
 import com.arya.mongo.auditing.model.SuperHero;
 import com.arya.mongo.auditing.repository.SuperHeroRepository;
 import com.arya.mongo.auditing.utils.HelperUtil;
+import com.mongodb.MongoClientSettings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +11,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
+@EnableMongoRepositories
 public class SpringBootMongoJaversApplication {
 
     private final Logger LOGGER = LoggerFactory.getLogger(getClass());

@@ -1,8 +1,8 @@
-package com.arya.hibernate.envers.auditing.controller;
+package com.arya.mongo.auditing.controller;
 
 
-import com.arya.hibernate.envers.auditing.model.SuperHero;
-import com.arya.hibernate.envers.auditing.service.SuperHeroService;
+import com.arya.mongo.auditing.model.SuperHero;
+import com.arya.mongo.auditing.service.SuperHeroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/hibernate/envers/super-hero")
+@RequestMapping("/javers/super-hero")
 public class SuperHeroController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class SuperHeroController {
 
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> findById(@PathVariable Long id) {
+    public ResponseEntity<?> findById(@PathVariable String id) {
         SuperHero superHero = superHeroService.findById(id);
         return ResponseEntity.ok().body(superHero);
     }
@@ -45,7 +45,7 @@ public class SuperHeroController {
 
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> delete(@PathVariable Long id) {
+    public ResponseEntity<?> delete(@PathVariable String id) {
         superHeroService.delete(id);
         return ResponseEntity.ok().body("Deleted successfully...!");
     }

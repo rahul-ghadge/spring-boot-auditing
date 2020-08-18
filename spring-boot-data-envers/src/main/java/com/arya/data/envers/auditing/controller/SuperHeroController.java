@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/data/super-hero")
+@RequestMapping("/data/envers/super-hero")
 public class SuperHeroController {
 
     @Autowired
