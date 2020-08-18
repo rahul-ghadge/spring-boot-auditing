@@ -1,0 +1,16 @@
+
+
+javers:
+  mongodb:
+    host: localhost
+    port: 27017
+    database: spring_boot_mongo_app
+    authentication-database: admin
+    username:
+    password:
+
+
+# Enable to print variables
+#logging:
+#  level:
+#    ROOT: DEBUG
