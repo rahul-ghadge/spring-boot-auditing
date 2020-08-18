@@ -11,12 +11,12 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.arya.jpa.auditing</groupId>
-    <artifactId>spring-boot-data-auditing</artifactId>
+    <groupId>com.arya.auditing</groupId>
+    <artifactId>spring-boot-auditing</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>spring-boot-data-auditing</name>
-    <description>Spring boot postgres hibernate demo application</description>
+    <name>spring-boot-auditing</name>
+    <description>Spring boot Auditing entities using Javers and Envers</description>
 
 
     <modules>

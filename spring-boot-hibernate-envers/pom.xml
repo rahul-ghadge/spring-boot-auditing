@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>spring-boot-data-auditing</artifactId>
-        <groupId>com.arya.jpa.auditing</groupId>
+        <artifactId>spring-boot-auditing</artifactId>
+        <groupId>com.arya.auditing</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
